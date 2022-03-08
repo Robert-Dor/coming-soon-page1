@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "AdiHaus";
+  src: URL("https://assets.codepen.io/6060109/adihaus_regular.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AdiHaus";
+  src: url("https://assets.codepen.io/6060109/adihaus_bold.ttf")
+    format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body,
+html {
+  min-width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  font-family: AdiHaus;
+}
+
+.all-container {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+#logo {
+  display: block;
+  margin: 15px auto;
+}
+
+#girl {
+  background: url("https://assets.codepen.io/6060109/athlete-girl.png")
+    no-repeat right top;
+  background-size: cover;
+  height: 250px;
+  width: 100%;
+}
+
+.all-content-container {
+  padding: 20px 30px;
+}
+
+.text-content-container {
+  width: 100%;
+  text-align: center;
+}
+
+h2.red {
+  color: #cd3a24;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+h2.grey {
+  color: #333333;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+p {
+  margin: 15px 0 40px;
+  color: #333333;
+  line-height: 28px;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 48px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+/*  --- Below is how I wrote this on the first go before I watched Aaron do it in the video. I am wondering if it is ok to arrive at the same finish while following different coding paths to a solution. It looks ok but I'm wondering about width not being as responsive because I used px in place of percent.---
+
+.email-address {
+  display:flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+label {
+  position: relative;
+}
+
+input[type=text] {
+  border: 1px solid #333333;
+  border-radius: 3px;
+  font-family: AdiHaus;
+  font-size: 14px;
+  width: 311px;
+  height: 48px;
+  opacity: 0.5;
+  padding: 0 24px;
+  box-sizing: border-box;
+  
+}
+input[type=submit] {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 20%;
+  height: 48px;
+  box-sizing: border-box;
+  position: absolute;
+  background-color: #333333;
+  color: white;
+  font-family: AdiHaus;
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid #333333;
+  border-radius: 3px;
+}
+
+*/
+
+form {
+  display: flex;
+}
+
+input[type="text"] {
+  width: 75%;
+  height: 48px;
+  box-sizing: border-box;
+  padding: 0 24px;
+  border-radius: 3px 0px 0px 3px;
+}
+
+input[type="submit"] {
+  width: 20%;
+  height: 48px;
+  box-sizing: border-box;
+  background-color: #000000;
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+  border: none;
+  border-radius: 0px 3px 3px 0px;
+}
